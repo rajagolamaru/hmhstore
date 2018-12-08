@@ -1,0 +1,100 @@
+git init
+
+
+git remote add origin "git@github.com:rajagolamaru/hmhstore.git"
+
+git pull origin master
+
+git status
+
+git add   first.java
+
+git commit -m "bug fixing local repo"
+
+for mulitiple files
+-----------------------
+git add -A (all files to inedex)
+
+git commit -a -m "adding 3 files"  (multifiles commit)
+
+
+git log
+
+
+
+creating branches
+-----------------
+
+git branch devbranch
+
+git checkout devbranch
+
+git add second.java
+
+git commit -m "my dev branch"
+
+> ls
+
+
+merge:
+-----
+
+git checkout master
+
+git merge  devbranch
+
+
+>cat second.java
+
+rebasing:
+---------
+> git checkout devbranch
+> git rebase master
+> git rebase devbranch
+
+
+
+> ssh-keygen
+> cat your name get the key add to git hub
+
+adding ssh key to github under setting
+
+> ssh -T git@github.com
+
+> git push origin firstbranch
+
+> git push orgigin master
+
+> git log
+----------------
+
+revert to the preivous commit
+
+git checkout hexadecimalnumber(8 digits commit number) second.java
+
+
+----------------------------------
+
+> git pull --rebase origin  master
+> git mergetool
+> git rebase --continue
+> git push origin master
+> git branch feature1
+> git checkout feature1
+> git push origin feature1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
